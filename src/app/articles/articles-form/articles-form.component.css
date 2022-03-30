@@ -1,0 +1,11 @@
+.form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(220, 230, 233);
+    
+}
+.myBorder{
+    background-color: black;
+    
+}

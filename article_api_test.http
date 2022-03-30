@@ -1,0 +1,18 @@
+GET http://localhost:3000/articles/
+
+###
+DELETE http://localhost:3000/articles/10
+
+###
+PUT http://localhost:3000/articles/9
+content-type: application/json
+
+{
+    "title": "sample",
+    "description": "wed, 21 oct 2021 18:27:50 GMT",
+    "photo": "image",
+    "taille": "Taille Z",
+    "nbreArticle": 45,
+    "prix": 2456
+    
+}

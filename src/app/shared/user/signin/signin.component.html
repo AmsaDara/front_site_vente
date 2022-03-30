@@ -1,0 +1,39 @@
+<!-- <h1>Inscrivez-vous ICI</h1> -->
+<form [formGroup]="loginForm" novalidate (ngSubmit)="onSubmit()">
+  <mat-card class="shipping-card">
+    <mat-card-header>
+      <mat-card-title>Connectez-vous ICI</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input type="email" matInput placeholder="nom@exemple.com" formControlName="email">
+            <mat-error *ngIf="loginForm.controls['email'].hasError('required')">
+              Email <strong>Obligatoire</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput type="password" placeholder="Mot De Passe" formControlName="password">
+            <mat-error *ngIf="loginForm.controls['password'].hasError('required')">
+              Mettez un bon mot de passe <strong>Obligatoire</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      
+      
+    
+     
+      
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit">Connexion</button>
+      <button mat-raised-button color="warn" type="reset">Annuler</button>
+      <a mat-stroked-button color="accent" [routerLink]="['/register']">S'inscrire ICI</a>
+    </mat-card-actions>
+  </mat-card>
+</form>
