@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  BASE_API_URI : 'http://localhost:3000',
+  BASE_API_URI : 'https://theapiname.herokuapp.com',
   CLOUDINARY: {
     CLOUD_NAME: 'alfa-computers',
     API_KEY: '284629792882378',
