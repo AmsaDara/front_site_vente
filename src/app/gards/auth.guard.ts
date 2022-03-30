@@ -22,7 +22,7 @@ export class AuthGuard implements CanActivate, CanActivateChild {
       return true;
     }
 
-    this.router.navigate(['/accueil'],{ queryParams: { returnUrl: state.url } });
+    this.router.navigate(['/articles'],{ queryParams: { returnUrl: state.url } });
     return false;
   }
 
@@ -35,7 +35,7 @@ export class AuthGuard implements CanActivate, CanActivateChild {
       return true;
     }
 
-    this.router.navigate(['/accueil'],{ queryParams: { returnUrl: state.url } });
+    this.router.navigate(['/articles'],{ queryParams: { returnUrl: state.url } });
     return false;
   }
   
