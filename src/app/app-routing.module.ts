@@ -14,14 +14,13 @@ const routes: Routes = [
     component:HomePageComponent
   },
   {
-    path:'allarticles',
-    component:ArticlesPageComponent,
-    canActivate:[AuthGuard]
-  },
-  {
-    path:'unallarticles',
+    path:'articles',
     component:ArticlesPageComponent
   },
+  // {
+  //   path:'unallarticles',
+  //   component:ArticlesPageComponent
+  // },
   {
     path:'about',
     component:AboutPageComponent
