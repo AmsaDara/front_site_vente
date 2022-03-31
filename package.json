@@ -27,6 +27,7 @@
     "@angular/router": "~13.1.0",
     "@cloudinary/ng": "^1.1.0",
     "@cloudinary/url-gen": "^1.6.0",
+    "@ngmodule/material-carousel": "^0.6.0",
     "compression": "^1.7.4",
     "express": "^4.17.3",
     "hammerjs": "^2.0.8",

@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { map, Observable, shareReplay } from 'rxjs';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { AuthenticateService } from './shared/user/authenticate.service';
+import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
 
 @Component({
   selector: 'app-root',
@@ -34,4 +35,12 @@ export class AppComponent implements OnInit, OnDestroy {
     ngOnDestroy(): void {
       this.subscription.unsubscribe()
     }
+    
+    slides = [
+      {'image': 'https://m.media-amazon.com/images/I/81ixL7Zgl7L._AC_SL1500_.jpg'},
+      {'image': 'https://m.media-amazon.com/images/I/61dKY4wUqoL._AC_SL1000_.jpg'},
+      {'image': 'https://m.media-amazon.com/images/I/81ixL7Zgl7L._AC_SL1500_.jpg'},
+      {'image':  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeYj3Ine1RpuIYGf5bvhHZh8XE--FJkBkjtw&usqp=CAU'},
+      {'image': 'https://m.media-amazon.com/images/I/81ixL7Zgl7L._AC_SL1500_.jpg'},
+    ];
 }

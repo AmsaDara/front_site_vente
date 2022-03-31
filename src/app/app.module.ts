@@ -22,6 +22,7 @@ import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserModule } from './shared/user/user.module';
 import { JwtInterceptor } from './shared/user/jwt.interceptors';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 
 
@@ -49,7 +50,8 @@ import { JwtInterceptor } from './shared/user/jwt.interceptors';
     MatRadioModule,
     MatCardModule,
     ReactiveFormsModule,
-    UserModule
+    UserModule,
+    MatCarouselModule.forRoot()
    
   ], 
   providers: [
