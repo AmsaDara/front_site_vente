@@ -31,7 +31,7 @@ export class RegisterComponent {
         if(res.status === "success"){
           this.snackBar.open(res.message,"close");
           this.route$.url.subscribe( Value =>
-          this.router.navigate(['articles']) )
+          this.router.navigate(['signin']) )
         } else if (res.status === "fuil"){
           this.snackBar.open(res.message,"close")
         }

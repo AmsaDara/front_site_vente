@@ -12,25 +12,25 @@
         <span class="label">AArticle</span>
     </a> -->
     <a mat-list-item routerLink="/articles">
-      <mat-icon class="icon">home</mat-icon>
+      <mat-icon class="icon">article</mat-icon>
         <span class="label">Article</span>
     </a>
     <a mat-list-item routerLink="/about">
-      <mat-icon class="icon">about</mat-icon>
+      <mat-icon class="icon">library_add</mat-icon>
         <span class="label">About</span>
     </a>
     <a mat-list-item routerLink="/contact">
-      <mat-icon class="icon">contact</mat-icon>
+      <mat-icon class="icon">contacts</mat-icon>
       <span class="label">Contact</span>
     </a>
-    <a  mat-list-item type="button" routerLink="/register">
+    <!-- <a  mat-list-item  routerLink="/register">
       <mat-icon class="icon">perm_identity</mat-icon>
-      <!-- <span class="label">LogOut</span> -->
-    </a>
+      <span class="label">LogOut</span>
+    </a> -->
     
-    <a mat-list-item type="button" routerLink="/signin">
+    <a mat-list-item routerLink="/signin">
       <mat-icon class="icon">account_box</mat-icon>
-      <!-- <span class="label">Login</span> -->
+      <span class="label">Login</span>
     </a>
     
     <app-user-badge [userInfo]="currentUser"></app-user-badge>
@@ -40,9 +40,16 @@
   <mat-sidenav-content>
     <mat-toolbar style="background-image: url('https://mdbootstrap.com/img/Photos/Others/gradient12.webp')">
      <div fxHide.gt-xs>
-       <button mat-icon-button>
-        <mat-icon>menu</mat-icon>
+       
+      <button
+      type="button"
+      aria-label="Toggle sidenav"
+      mat-icon-button
+      (click)="sidenav.toggle()"
+      *ngIf="isHandset$ | async">
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
+       
     </div>
      <div>
        <a>

@@ -1,4 +1,4 @@
-/* .sidenav-container {
+.sidenav-container {
     height: 100%;
   }
   
@@ -14,7 +14,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-  } */
+  }
   
   mat-sidenav-container, mat-sidenav-content, mat-sidenav {
     height: 100%;
