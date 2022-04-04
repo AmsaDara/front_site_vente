@@ -1,0 +1,26 @@
+#about{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 5px;
+    justify-content: space-between;
+}
+.left{
+    width: 48%;
+    background-image: url('https://scontent.fdkr6-1.fna.fbcdn.net/v/t39.30808-6/271726541_684575519592623_1656366907470944024_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeGpnynw6sxhg4us2XGTYuVl2tSf35JMgtza1J_fkkyC3OtBlet1mGmA2sC1hXWEm1w&_nc_ohc=r6BEXPchKWQAX9JkbRP&tn=OuPEMWireW-U_t5R&_nc_ht=scontent.fdkr6-1.fna&oh=00_AT_27GkYQYqlIVP_xbH2sPASqMZAJODnQ2pIVr22H2Xzng&oe=6250BD65');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-origin: border-box;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(34, 103, 223, 0.678);
+}
+
+.right{
+    width: 48%;
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/gradient12.webp');
+    text-align: center;
+    justify-content: center;
+}
